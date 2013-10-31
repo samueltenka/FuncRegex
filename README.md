@@ -7,7 +7,7 @@ This is a slice of an (interpreter-maker)-making project I started in summer 201
 
 
 
-_Why a slice?_
+*Why a slice?*
 
 I never finished it.
 Indeed, there's always more to add. Later versions contain bugs I haven't conquered
@@ -17,11 +17,11 @@ leaving a core that I hope captures the main features of the program.
 
 
 
-_What does the program do?_
+*What does the program do?*
 
 It lets a programmer specify a language, and then creates an interpreter for the language.
 
-A _simple example_ of use is given in `THE_USE.py`, in which we specify a _calculator_:
+A simple example of use is given in `THE_USE.py`, in which we specify a calculator:
 For example, `whitespace = '((" ")*)'` defines whitespace to be 0 or more spaces.
 Similarly (don't worry about `pushDigit`, `numToStack` yet),
 `digitList = '"0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"'`     says in that a <digitList> is "0", or "1", or "2", etc.;
@@ -35,6 +35,6 @@ whitespace, numerical digits, identifiers, etc., we proceed to define arithmetic
 
 
 
-_How is the progam organized?_
+*How is the progam organized?*
 
 
