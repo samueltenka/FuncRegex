@@ -44,8 +44,8 @@ It's useful, see?
 (`pushDigit` and other parser-called methods are defined in "SAM\_CODE\_FuncContaining_Class.py)
 
 After describing how to recognize whitespace, numerical digits, etc.,
-we proceed to describe expressions of arithmetic. A powerful feature of FuncRegex is that language-
-definition is allowed to be _recursive_! Here's one more excerpt from "THE_USE.py", showing recursion:
+we proceed to describe expressions of arithmetic. A powerful feature of FuncRegex is that language-definition
+is allowed to be _recursive_! Here's one more excerpt from "THE_USE.py", showing recursion:
 
 `unit = '(("+"|"-"<negate>)?)(("("<expression>")")|(($(""<digitList>)""<digits>)|(""<list>)|($(""<alphabetList>)""<variable>)))""<whitespace>'`
 
