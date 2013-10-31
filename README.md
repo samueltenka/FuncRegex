@@ -40,10 +40,15 @@ when it recognizes `<digit>` by recognizing `<digitList>`. See? (`pushDigit` is 
 After describing how to recognize whitespace, numerical digits, etc.,
 we proceed to describe expressions of arithmetic. A powerful feature of FuncRegex is that language-
 definition is allowed to be _recursive_! Here's one more excerpt from "THE_USE.py", showing recursion:
+
 `unit = '(("+"|"-"<negate>)?)(("("<expression>")")|(($(""<digitList>)""<digits>)|(""<list>)|($(""<alphabetList>)""<variable>)))""<whitespace>'`
+
 .
+
 . (lots of intermediate definitions, for lists, multiplication, addition, logic)
+
 .
+
 `expression = '""<orExp>'`
 
 
