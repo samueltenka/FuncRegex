@@ -6,8 +6,9 @@ FuncRegex
 This is a slice of an (interpreter-maker)-making project I started in summer 2012.
 
 
-
-*Why a slice?*
+************
+Why a slice?
+************
 
 I never finished it.
 Indeed, there's always more to add. Later versions contain bugs I haven't conquered
