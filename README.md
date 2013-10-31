@@ -60,7 +60,7 @@ definition is allowed to be _recursive_! Here's one more excerpt from "THE_USE.p
 
 OK, the definition of `<unit>` is a bit long. It handles expressions like "8", and "-42", and "my_list[255]".
 But it also handles "(8 * -42 == my_list[255])"! This is because recognizing an `<expression>`, enclosed by parens,
-suffices to recognize `<unit>`. Thus, we are not  
+suffices to recognize `<unit>`. If not for recursion, `<expression>` could recognize "1\*2 + 3\*4" but not "1\*(2+3)\*4"
 
 
 
