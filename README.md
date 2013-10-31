@@ -72,16 +72,16 @@ This concludes our tour of language-specification. Let's try out the calculator 
 ************
 *Ouput of Example (Calculator Language)*
 
-> please enter an expression
+>>> please enter an expression
 a = 7
 
-> please enter an expression
-> print a
-> answer: 7
+>>> please enter an expression
+print a
+>>> answer: 7
 
-> please enter an expression
-> print 1*(2+3)*4
-> answer: 20
+>>> please enter an expression
+print 1*(2+3)*4
+>>> answer: 20
 
 _It works!_
 
@@ -89,20 +89,20 @@ The compact language-specification language allows modular language-specificatio
 We added a list feature to the language by modifying the language-spec, and by 
 writing some functions for the parser to call. (Repository contains modified files.)
 
-> please enter an expression
-> mylist = [3 1 4 1 5 9 2 6]
+>>> please enter an expression
+mylist = [3 1 4 1 5 9 2 6]
 
-> please enter an expression
-> print mylist[4]
-> answer: 5
+>>> please enter an expression
+print mylist[4]
+>>> answer: 5
 
-> please enter an expression
-> print mylist[4]==6
-> answer: False
+>>> please enter an expression
+print mylist[4]==6
+>>> answer: False
 
-> please enter an expression
-> print mylist[4]+mylist[5]
-> answer: 14
+>>> please enter an expression
+print mylist[4]+mylist[5]
+>>> answer: 14
 
 _Super!_
 
