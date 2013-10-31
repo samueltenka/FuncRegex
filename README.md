@@ -73,7 +73,7 @@ This concludes our tour of language-specification. Let's try out the calculator 
 *Ouput of Example (Calculator Language)*
 
 > please enter an expression
-> a = 7
+a = 7
 
 > please enter an expression
 > print a
