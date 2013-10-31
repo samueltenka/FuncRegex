@@ -37,8 +37,15 @@ what action an interpreter should take given a certain parse tree, at the same t
 the possible tree structures! In this case, we specify that the parser perform `pushDigit`
 when it recognizes `<digit>` by recognizing `<digitList>`. See? (`pushDigit` is defined in "SAM_CODE_FuncContaining_Class.py").
 
-We build up our language this way. After describing how to recognize
-whitespace, numerical digits, identifiers, etc., we proceed to define arithmetic operations:
+After describing how to recognize whitespace, numerical digits, etc.,
+we proceed to describe expressions of arithmetic. A powerful feature of FuncRegex is that language-
+definition is allowed to be _recursive_! Here's one more excerpt from "THE_USE.py", showing recursion:
+`unit = '(("+"|"-"<negate>)?)(("("<expression>")")|(($(""<digitList>)""<digits>)|(""<list>)|($(""<alphabetList>)""<variable>)))""<whitespace>'`
+.
+. (lots of intermediate definitions, for lists, multiplication, addition, logic)
+.
+`expression = '""<orExp>'`
+
 
 
 
