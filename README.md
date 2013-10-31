@@ -3,7 +3,7 @@ FuncRegex
 
 
 
-This is a slice of an (interpreter-maker)-making project I started in summer 2011.
+This is a slice of an (interpreter-maker)-making project I started in summer 2011. I worked in Python (2.7). 
 
 
 ************
