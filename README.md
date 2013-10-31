@@ -109,32 +109,48 @@ _Super!_
 ************
 *How is the progam organized?*
 
-Utility functions:
-> "ErrorFileClass.py"
-> "SettingsHeader.py"
+_Utility functions_:
 
-Parser of Language-Specification Language (would have been cool to bootstrap :D ... didn't):
-> "RegexCompilerClass.py"
+"ErrorFileClass.py"
 
-The _meat_ --- describes how to combine two parsers P and Q into "P or Q", "P then Q", "P*", etc.:
-> "RegexTokenizerClass.py"
+"SettingsHeader.py"
 
-Wraps string class, catalyzing digestion by FuncRegex:
-> "TextClass.py"
-> "TextSkipperClass.py"
+_Parser of Language-Specification Language_ (would have been cool to bootstrap :D ... didn't):
 
-Data structures to contain parser state/output:
-> "TokenClass.py"
-> "TokenListClass.py"
-And to tokenize:
-> "TokenizerClass.py"
-> "SymbolsClass.py"
+"RegexCompilerClass.py"
 
-Putting it all together:
-> "FunctionRegexLibrary.py"
+The _meat_ --- _describes how to combine two parsers P and Q into "P or Q", "P then Q", "P*", etc._:
 
-Calculator Example:
-> "THE_USE.py" --- language specification
-> "SAM\_CODE\_FuncContaining_Class.py" --- virtual machine; parser-called metods
-Defines "doing nothing":
-> "FuncHeader.py"
+"RegexTokenizerClass.py"
+
+_Wraps string class, catalyzing digestion by FuncRegex_:
+
+"TextClass.py"
+
+"TextSkipperClass.py"
+
+_Data structures to contain parser state/output_:
+
+"TokenClass.py"
+
+"TokenListClass.py"
+
+_And to tokenize_:
+
+"TokenizerClass.py"
+
+"SymbolsClass.py"
+
+_Putting it all together_:
+
+"FunctionRegexLibrary.py"
+
+_Calculator Example_:
+
+"THE_USE.py" --- language specification
+
+"SAM\_CODE\_FuncContaining_Class.py" --- virtual machine; parser-called metods
+
+_Defines "doing nothing"_:
+
+"FuncHeader.py"
