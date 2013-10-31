@@ -31,8 +31,8 @@ Similarly (don't worry about `pushDigit`, `numToStack` yet),
 
 `digits = '(($(""<digitList>)""<digit>)+)(""<numToStack>)'`: and a `<digits>` is a sequence of 1 or more digits.
 
-The specification-language is like standard regular expressions.
-Now, what makes FuncRegex _different_ from other tools is we can specify
+The specification language is like standard regular expression languages.
+Now, what makes FuncRegex _different_ from other tools is that we can specify
 what action an interpreter should take given a certain parse tree, at the same time we describe
 the possible tree structures! In this case, we specify that the parser perform `pushDigit`
 when it recognizes `<digit>` by recognizing `<digitList>`. See? (`pushDigit` is defined in "SAM_CODE_FuncContaining_Class.py").
