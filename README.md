@@ -24,9 +24,13 @@ It lets a programmer specify a language, and then creates an interpreter for the
 A simple example of use is given in "THE_USE.py", in which we specify a calculator:
 For example, `whitespace = '((" ")*)'` defines whitespace to be 0 or more spaces.
 Similarly (don't worry about `pushDigit`, `numToStack` yet),
+
 `digitList = '"0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"'`     says in that a `<digitList>` is "0", or "1", or "2", etc.;
+
 `digit = '""<digitList>""<pushDigit>'`                      a `<digit>` is just a `<digitLists>`;
+
 `digits = '(($(""<digitList>)""<digit>)+)(""<numToStack>)'` and a `<digits>` is a sequence of 1 or more digits.
+
 The specification-language is like standard regular expressions.
 Now, what makes FuncRegex _different_ from other tools is we can specify
 what action an interpreter should take given a certain parse tree, at the same time we describe
