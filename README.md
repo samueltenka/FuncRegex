@@ -48,10 +48,10 @@ we proceed to describe expressions of arithmetic. A powerful feature of FuncRege
 definition is allowed to be _recursive_! Here's one more excerpt from "THE_USE.py", showing recursion:
 
 > `unit = '(("+"|"-"<negate>)?)(("("<expression>")")|(($(""<digitList>)""<digits>)|(""<list>)|($(""<alphabetList>)""<variable>)))""<whitespace>'`
-...
-... (lots of intermediate definitions, for lists, multiplication, addition, logic)
-... To simplify, term := product of units; arithmetic expression := sum of terms; orExp = arith. expr.s combined by "or".
-...
+> ...
+> ... (lots of intermediate definitions, for lists, multiplication, addition, logic)
+> ... To simplify, term := product of units; arithmetic expression := sum of terms; orExp = arith. expr.s combined by "or".
+> ...
 > `expression = '""<orExp>'`
 
 OK, the definition of `<unit>` is a bit long. It handles expressions like "8", and "-42", and "mylist[255]".
