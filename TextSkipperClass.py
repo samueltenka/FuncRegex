@@ -7,7 +7,7 @@ Created on Jun 27, 2011
 import SymbolsClass
 import TextClass
 
-class TextSkipper(SymbolsClass.Symbols, Parser.TextClass.Text):
+class TextSkipper(Symbols, TextClass.Text):
     position = 0
     myText = ""
     def atEnd(self):
