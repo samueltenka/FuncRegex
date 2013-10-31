@@ -48,13 +48,13 @@ definition is allowed to be _recursive_! Here's one more excerpt from "THE_USE.p
 
 `unit = '(("+"|"-"<negate>)?)(("("<expression>")")|(($(""<digitList>)""<digits>)|(""<list>)|($(""<alphabetList>)""<variable>)))""<whitespace>'`
 
-.
+...
 
-. (lots of intermediate definitions, for lists, multiplication, addition, logic)
+... (lots of intermediate definitions, for lists, multiplication, addition, logic)
 
-. To simplify, term := product of units; arithmetic expression := sum of terms; orExp = arith. expr.s combined by "or".
+... To simplify, term := product of units; arithmetic expression := sum of terms; orExp = arith. expr.s combined by "or".
 
-.
+...
 
 `expression = '""<orExp>'`
 
