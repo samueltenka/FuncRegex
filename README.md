@@ -35,7 +35,12 @@ The specification language is like standard regular expression languages.
 Now, what makes FuncRegex _different_ from other tools is that we can specify
 what action an interpreter should take given a certain parse tree, at the same time we describe
 the possible tree structures! In this case, we specify that the parser perform `pushDigit`
-when it recognizes `<digit>` by recognizing `<digitList>`. See? (`pushDigit` is defined in "SAM_CODE_FuncContaining_Class.py").
+when it recognizes `<digit>` by recognizing `<digitList>`. `pushDigit` isn't a syntax-specification; it is a
+method that multiplies the top of the stack by 10, then adds the digit just read.
+`pushDigit` can see the current state of the parser.
+It's useful, see?
+
+(`pushDigit` and other parser-called methods are defined in "SAM_CODE_FuncContaining_Class.py)
 
 After describing how to recognize whitespace, numerical digits, etc.,
 we proceed to describe expressions of arithmetic. A powerful feature of FuncRegex is that language-
@@ -44,11 +49,18 @@ definition is allowed to be _recursive_! Here's one more excerpt from "THE_USE.p
 `unit = '(("+"|"-"<negate>)?)(("("<expression>")")|(($(""<digitList>)""<digits>)|(""<list>)|($(""<alphabetList>)""<variable>)))""<whitespace>'`
 
 .
+
 . (lots of intermediate definitions, for lists, multiplication, addition, logic)
+
+. To simplify, term := product of units; arithmetic expression := sum of terms; orExp = arith. expr.s combined by "or".
+
 .
 
 `expression = '""<orExp>'`
 
+OK, the definition of `<unit>` is a bit long. It handles expressions like "8", and "-42", and "my_list[255]".
+But it also handles "(8 * -42 == my_list[255])"! This is because recognizing an `<expression>`, enclosed by parens,
+suffices to recognize `<unit>`. Thus, we are not  
 
 
 
