@@ -7,8 +7,8 @@ This is a slice of an (interpreter-maker)-making project I started in summer 201
 
 
 ************
-Why a slice?
-************
+*Why a slice?*
+
 
 I never finished it.
 Indeed, there's always more to add. Later versions contain bugs I haven't conquered
@@ -17,7 +17,7 @@ Thus, to make this repository I pruned away the bug-infested new growth,
 leaving a core that I hope captures the main features of the program.
 
 
-
+************
 *What does the program do?*
 
 It lets a programmer specify a language, and then creates an interpreter for the language.
@@ -64,7 +64,7 @@ But it also handles "(8 * -42 == my_list[255])"! This is because recognizing an 
 suffices to recognize `<unit>`. If not for recursion, `<expression>` could recognize "1\*2 + 3\*4" but not "1\*(2+3)\*4"
 
 
-
+************
 *How is the progam organized?*
 
 
