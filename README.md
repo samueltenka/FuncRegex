@@ -47,17 +47,12 @@ After describing how to recognize whitespace, numerical digits, etc.,
 we proceed to describe expressions of arithmetic. A powerful feature of FuncRegex is that language-
 definition is allowed to be _recursive_! Here's one more excerpt from "THE_USE.py", showing recursion:
 
-`unit = '(("+"|"-"<negate>)?)(("("<expression>")")|(($(""<digitList>)""<digits>)|(""<list>)|($(""<alphabetList>)""<variable>)))""<whitespace>'`
-
+> `unit = '(("+"|"-"<negate>)?)(("("<expression>")")|(($(""<digitList>)""<digits>)|(""<list>)|($(""<alphabetList>)""<variable>)))""<whitespace>'`
 ...
-
 ... (lots of intermediate definitions, for lists, multiplication, addition, logic)
-
 ... To simplify, term := product of units; arithmetic expression := sum of terms; orExp = arith. expr.s combined by "or".
-
 ...
-
-`expression = '""<orExp>'`
+> `expression = '""<orExp>'`
 
 OK, the definition of `<unit>` is a bit long. It handles expressions like "8", and "-42", and "mylist[255]".
 But it also handles "(8 * -42 == my_list[255])"! This is because recognizing an `<expression>`, enclosed by parens,
@@ -69,15 +64,15 @@ This concludes our tour of language-specification. Let's try out the calculator 
 *Ouput of Example (Calculator Language)*
 
 > please enter an expression
-a = 7
+> a = 7
 
 > please enter an expression
-print a
-answer: 7
+> print a
+> answer: 7
 
 > please enter an expression
-print 1*(2+3)*4
-answer: 20
+> print 1*(2+3)*4
+> answer: 20
 
 
 ************
