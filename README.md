@@ -59,9 +59,25 @@ definition is allowed to be _recursive_! Here's one more excerpt from "THE_USE.p
 
 `expression = '""<orExp>'`
 
-OK, the definition of `<unit>` is a bit long. It handles expressions like "8", and "-42", and "my_list[255]".
+OK, the definition of `<unit>` is a bit long. It handles expressions like "8", and "-42", and "mylist[255]".
 But it also handles "(8 * -42 == my_list[255])"! This is because recognizing an `<expression>`, enclosed by parens,
-suffices to recognize `<unit>`. If not for recursion, `<expression>` could recognize "1\*2 + 3\*4" but not "1\*(2+3)\*4"
+suffices to recognize `<unit>`. If not for recursion, `<expression>` could recognize "1\*2 + 3\*4" but not "1\*(2+3)\*4".
+
+This concludes our tour of language-specification. Let's try out the calculator we built!
+
+************
+*Ouput of Example (Calculator Language)*
+
+> please enter an expression
+a = 7
+
+> please enter an expression
+print a
+answer: 7
+
+> please enter an expression
+print 1*(2+3)*4
+answer: 20
 
 
 ************
