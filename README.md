@@ -71,13 +71,13 @@ This concludes our tour of language-specification. Let's try out the calculator 
 
 Our calculator language allows us to define and use variables:
 
+    please enter an expression
     >>> a = 7
     >>> print a
     answer: 7
 
 And to calculate:
 
-    please enter an expression
     >>> print 1*(2+3)*4 + a
     answer: 27
 
@@ -100,28 +100,24 @@ The linking of functions to syntax was automatic. (Repository contains modified 
 
 _Super!_
 
-************
-*How is the progam organized?*
+
+
+
+**How is the progam organized?**
 
 _Utility functions_:
-
-"ErrorFileClass.py"
-
-"SettingsHeader.py"
+* "ErrorFileClass.py"
+* "SettingsHeader.py"
 
 _Parser of Language-Specification Language_ (would have been cool to bootstrap :D ... didn't):
-
-"RegexCompilerClass.py"
+* "RegexCompilerClass.py"
 
 The _meat_ --- _describes how to combine two parsers P and Q into "P or Q", "P then Q", "P*", etc._:
-
-"RegexTokenizerClass.py"
+* "RegexTokenizerClass.py"
 
 _Wraps string class, catalyzing digestion by FuncRegex_:
-
-"TextClass.py"
-
-"TextSkipperClass.py"
+* "TextClass.py"
+* "TextSkipperClass.py"
 
 _Data structures to contain parser state/output_:
 
