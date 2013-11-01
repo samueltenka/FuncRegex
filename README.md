@@ -105,7 +105,8 @@ _Super!_
 
 **How is the progam organized?**
 
-TEXT-HANDLING AND DEBUGGING SETUP:
+**TEXT-HANDLING AND DEBUGGING SETUP:**
+
 _Utility functions_:
 * "ErrorFileClass.py"
 * "SettingsHeader.py"
@@ -122,7 +123,8 @@ _And to tokenize_:
 * "TokenizerClass.py"
 * "SymbolsClass.py"
 
-THE PARSER-CREATING ENGINE:
+**THE PARSER-CREATING ENGINE:**
+
 _Parser of Language-Specification Language_ (would have been cool to bootstrap :D ... didn't):
 * "RegexCompilerClass.py"
 
@@ -132,7 +134,8 @@ The _meat_ --- _describes how to combine two parsers P and Q into "P or Q", "P t
 _Putting it all together_:
 * "FunctionRegexLibrary.py"
 
-CALCULATOR EXAMPLE:
+**CALCULATOR EXAMPLE:**
+
 _Calculator Example_:
 * "THE_USE.py" --- language specification
 * "SAM\_CODE\_FuncContaining_Class.py" --- virtual machine; parser-called metods
