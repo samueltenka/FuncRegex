@@ -71,45 +71,32 @@ This concludes our tour of language-specification. Let's try out the calculator 
 
 Our calculator language allows us to define and use variables:
 
-    please enter an expression
-    a = 7
-    please enter an expression
-    print a
+    >>> a = 7
+    >>> print a
     answer: 7
-    please enter an expression
 
 And to calculate:
 
-    print 1*(2+3)*4 + a
+    please enter an expression
+    >>> print 1*(2+3)*4 + a
     answer: 27
 
 _It works!_
 
 The compact language-specification language allows modular language-specifications, and easy modification.
-To add a list feature to the calculator language, all we had to do was add a few lines to the language-spec, and
-write some functions for the parser to call. The linking of functions to syntax was automatic. (Repository contains modified files.)
+To add a list feature to the calculator language, all we had to do was:
+* add a few lines to the language-spec to build on the definition of `<unit>`
+* write some functions for the parser to call.
+The linking of functions to syntax was automatic. (Repository contains modified files.)
 
-> please enter an expression
 
-> mylist = [3 1 4 1 5 9 2 6]
-
-> please enter an expression
-
-> print mylist[4]
-
-> answer: 5
-
-> please enter an expression
-
-> print mylist[4]==6
-
-> answer: False
-
-> please enter an expression
-
-> print mylist[4]+mylist[5]
-
-> answer: 14
+    >>> mylist = [3 1 4 1 5 9 2 6]
+    >>> print mylist[4]
+    answer: 5
+    >>> print mylist[4]==6
+    answer: False
+    >>> print mylist[4]+mylist[5]
+    answer: 14
 
 _Super!_
 
