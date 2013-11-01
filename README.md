@@ -40,7 +40,7 @@ Similarly, `numToStack` pushes the register;s value onto the stack.
 Thus we embed actions into our specification; each language feature's syntax and function are in the same place,
 which is elegant. Embedding is useful, see?
 
-(`pushDigit` and other parser-called methods are defined in "SAM\_CODE\_FuncContaining_Class.py)
+(`pushDigit` and other parser-called methods are defined in "SAM\_CODE\_FuncContaining_Class.py")
 
 After describing how to recognize whitespace, numerical digits, etc.,
 we proceed to describe expressions of arithmetic. A powerful feature of FuncRegex is that language-definition
