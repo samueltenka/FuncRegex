@@ -120,27 +120,19 @@ _Wraps string class, catalyzing digestion by FuncRegex_:
 * "TextSkipperClass.py"
 
 _Data structures to contain parser state/output_:
-
-"TokenClass.py"
-
-"TokenListClass.py"
+* "TokenClass.py"
+* "TokenListClass.py"
 
 _And to tokenize_:
-
-"TokenizerClass.py"
-
-"SymbolsClass.py"
+* "TokenizerClass.py"
+* "SymbolsClass.py"
 
 _Putting it all together_:
-
-"FunctionRegexLibrary.py"
+* "FunctionRegexLibrary.py"
 
 _Calculator Example_:
-
-"THE_USE.py" --- language specification
-
-"SAM\_CODE\_FuncContaining_Class.py" --- virtual machine; parser-called metods
+* "THE_USE.py" --- language specification
+* "SAM\_CODE\_FuncContaining_Class.py" --- virtual machine; parser-called metods
 
 _Defines "doing nothing"_:
-
-"FuncHeader.py"
+* "FuncHeader.py"
