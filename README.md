@@ -6,7 +6,6 @@ FuncRegex
 This is a slice of an (interpreter-maker)-making project I started in summer 2011. I worked in Python (2.7). 
 
 
-
 **Why a slice?**
 
 I never finished it. 
@@ -102,17 +101,17 @@ _Super!_
 I think this is pretty cool.
 
 
-**Summary**
+**Summary (including points not mentioned elsewhere)**
 
 Program features include:
 * Parser-generation
-* Embedding of functions into language-specifications
-* Allowance of recursion in language-specifications
+* Embedding of functions into language-specifications => beautiful specifications
+* Allowance of recursion in language-specifications => powerful grammars
 
 Potential improvements include:
 * Richer set of syntax-function interactions
     * Lazy evaluation of arguments, e.g. for "if"-type syntaxes.
-    * Allow functions to modify which possibilities parser considers first  
+    * Allow functions to modify which possibilities parser considers first. => this begins to get into natural language processing... :)
 * Bootstrap implementation of language-specification language :)
 
 
