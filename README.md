@@ -105,19 +105,13 @@ _Super!_
 
 **How is the progam organized?**
 
-_Utility functions_:
-* "ErrorFileClass.py"
-* "SettingsHeader.py"
-
-_Parser of Language-Specification Language_ (would have been cool to bootstrap :D ... didn't):
-* "RegexCompilerClass.py"
-
-The _meat_ --- _describes how to combine two parsers P and Q into "P or Q", "P then Q", "P*", etc._:
-* "RegexTokenizerClass.py"
-
-_Wraps string class, catalyzing digestion by FuncRegex_:
-* "TextClass.py"
-* "TextSkipperClass.py"
+**Text-handling and Debugging Setup**:
+    _Utility functions_:
+    * "ErrorFileClass.py"
+    * "SettingsHeader.py"
+    _Wraps string class, catalyzing digestion by FuncRegex_:
+    * "TextClass.py"
+    * "TextSkipperClass.py"
 
 _Data structures to contain parser state/output_:
 * "TokenClass.py"
@@ -126,6 +120,13 @@ _Data structures to contain parser state/output_:
 _And to tokenize_:
 * "TokenizerClass.py"
 * "SymbolsClass.py"
+
+
+_Parser of Language-Specification Language_ (would have been cool to bootstrap :D ... didn't):
+* "RegexCompilerClass.py"
+
+The _meat_ --- _describes how to combine two parsers P and Q into "P or Q", "P then Q", "P*", etc._:
+* "RegexTokenizerClass.py"
 
 _Putting it all together_:
 * "FunctionRegexLibrary.py"
