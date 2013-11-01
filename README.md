@@ -94,9 +94,9 @@ The compact language-specification language allows modular language-specificatio
 We added a list feature to the language by modifying the language-spec, and by 
 writing some functions for the parser to call. (Repository contains modified files.)
 
-> please enter an expression
+* please enter an expression
 
-> mylist = [3 1 4 1 5 9 2 6]
+* mylist = [3 1 4 1 5 9 2 6]
 
 > please enter an expression
 
