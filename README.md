@@ -89,7 +89,8 @@ To add a list feature to the calculator language, all we had to do was:
 * write some functions for the parser to call.
 The linking of functions to syntax was automatic. (Repository contains modified files.)
 
-
+    >>> print 1*(2+3)*4 + a
+    answer: 27
     >>> mylist = [3 1 4 1 5 9 2 6]
     >>> print mylist[4]
     answer: 5
