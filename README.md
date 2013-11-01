@@ -45,7 +45,7 @@ which is elegant. Embedding is useful, see?
 
 After describing how to recognize whitespace, numerical digits, etc.,
 we proceed to describe expressions of arithmetic. A powerful feature of FuncRegex is that language-definition
-is allowed to be **recursive**! Here's one more excerpt from "THE_USE.py", showing recursion:
+is allowed to be **recursive**! Here's one more excerpt from "THE_USE.py", showing (in this case indirect) recursion:
 
     unit = '(("+"|"-"<negate>)?)(("("<expression>")")|(($(""<digitList>)""<digits>)|(""<list>)|($(""<alphabetList>)""<variable>)))""<whitespace>'
     ...
@@ -58,7 +58,7 @@ OK, the definition of `<unit>` is a bit long. It handles expressions like "8", a
 But it also handles "(8 * -42 == my_list[255])"! This is because recognizing an `<expression>`, enclosed by parens,
 suffices to recognize `<unit>`. If not for recursion, `<expression>` could recognize "1\*2 + 3\*4" but not "1\*(2+3)\*4".
 
-Note: there's a problem with our approach, namely that we don't want to
+Note: there's a **problem** with our approach, namely that we don't want to
 indiscriminately evaluate the bodies of if-statements, etc. One solution is to lazily evaluate arguments to the
 parser-called methods. I had begun but not finished this feature when school started / I got distracted by other projects. 
 
@@ -67,9 +67,11 @@ This concludes our tour of language-specification. Let's try out the calculator 
 
 
 
-**Ouput of Example (Calculator Language)**
+**Output of Example (Calculator Language)**
 
 > please enter an expression
+
+Our calculator language allows us to define and use variables:
 
 > a = 7
 
@@ -81,19 +83,21 @@ This concludes our tour of language-specification. Let's try out the calculator 
 
 > please enter an expression
 
-> print 1*(2+3)*4
+And to calculate:
 
-> answer: 20
+> print 1*(2+3)*4 + a
+
+> answer: 27
 
 _It works!_
 
 The compact language-specification language allows modular language-specifications, and easy modification.
-We added a list feature to the language by modifying the language-spec, and by 
-writing some functions for the parser to call. (Repository contains modified files.)
+To add a list feature to the calculator language, all we had to do was add a few lines to the language-spec, and
+write some functions for the parser to call. The linking of functions to syntax was automatic. (Repository contains modified files.)
 
-* please enter an expression
+> please enter an expression
 
-* mylist = [3 1 4 1 5 9 2 6]
+> mylist = [3 1 4 1 5 9 2 6]
 
 > please enter an expression
 
