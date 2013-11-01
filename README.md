@@ -70,6 +70,7 @@ This concludes our tour of language-specification. Let's try out the calculator 
 **Output of Example (Calculator Language)**
 
 Our calculator language allows us to define and use variables:
+
     please enter an expression
     a = 7
     please enter an expression
@@ -78,6 +79,7 @@ Our calculator language allows us to define and use variables:
     please enter an expression
 
 And to calculate:
+
     print 1*(2+3)*4 + a
     answer: 27
 
