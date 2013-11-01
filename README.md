@@ -99,7 +99,21 @@ The linking of functions to syntax was automatic. (Repository contains modified 
     answer: 14
 
 _Super!_
+I think this is pretty cool.
 
+
+**Summary**
+
+Program features include:
+* Parser-generation
+* Embedding of functions into language-specifications
+* Allowance of recursion in language-specifications
+
+Potential improvements include:
+* Richer set of syntax-function interactions
+    * Lazy evaluation of arguments, e.g. for "if"-type syntaxes.
+    * Allow functions to modify which possibilities parser considers first  
+* Bootstrap implementation of language-specification language :)
 
 
 
@@ -125,7 +139,7 @@ _And to tokenize_:
 
 **THE PARSER-CREATING ENGINE:**
 
-_Parser of Language-Specification Language_ (would have been cool to bootstrap :D ... didn't):
+_Parser of Language-Specification Language_ (would have been cool to bootstrap... haven't yet):
 * "RegexCompilerClass.py"
 
 The _meat_ --- _describes how to combine two parsers P and Q into "P or Q", "P then Q", "P*", etc._:
