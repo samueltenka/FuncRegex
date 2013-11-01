@@ -6,7 +6,7 @@ FuncRegex
 This is a slice of an (interpreter-maker)-making project I started in summer 2011. I worked in Python (2.7). 
 
 
-************
+
 **Why a slice?**
 
 I never finished it. 
@@ -16,7 +16,7 @@ Thus, to make this repository I pruned away the bug-infested new growth,
 leaving a core that I hope captures the main features of the program.
 
 
-************
+
 **What does the program do?**
 
 It lets a programmer specify a language, and then creates an interpreter for the language.
@@ -64,7 +64,9 @@ parser-called methods. I had begun but not finished this feature when school sta
 
 This concludes our tour of language-specification. Let's try out the calculator we built!
 
-************
+
+
+
 **Ouput of Example (Calculator Language)**
 
 > please enter an expression
