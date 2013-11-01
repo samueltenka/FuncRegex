@@ -111,7 +111,7 @@ Program features include:
 Potential improvements include:
 * Richer set of syntax-function interactions
     * Lazy evaluation of arguments, e.g. for "if"-type syntaxes.
-    * Allow functions to modify which possibilities parser considers first. => this begins to get into natural language processing... :)
+    * Allow functions to modify which possibilities parser considers first. => this begins to get into natural language processing :)
 * Bootstrap implementation of language-specification language :)
 
 
